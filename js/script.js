@@ -75,7 +75,7 @@ ballFieldsData.map(function(x){
 
 
 
-
+          
 function findField(match, ballFieldsData) {
   return ballFieldsData.filter( field =>{
     const regex = new RegExp(match, 'g');
@@ -114,7 +114,7 @@ function showFields() {
         </ul>
         </div>
         `;
-      });
+      }).join('');
       document.querySelector('#results').innerHTML = someField;
 }
 
